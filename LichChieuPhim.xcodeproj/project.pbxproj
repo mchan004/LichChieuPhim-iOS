@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2658C0051FA0C869002BB3B7 /* ComingSoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2658C0041FA0C869002BB3B7 /* ComingSoonViewController.swift */; };
+		2658C0071FA0CDF0002BB3B7 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2658C0061FA0CDF0002BB3B7 /* MenuTableViewController.swift */; };
+		2658C0091FA0CF85002BB3B7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2658C0081FA0CF85002BB3B7 /* Movie.swift */; };
 		2691328B1F9F0FCE006C0836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2691328A1F9F0FCE006C0836 /* AppDelegate.swift */; };
-		2691328D1F9F0FCE006C0836 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2691328C1F9F0FCE006C0836 /* ViewController.swift */; };
+		2691328D1F9F0FCE006C0836 /* NowShowingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2691328C1F9F0FCE006C0836 /* NowShowingController.swift */; };
 		269132901F9F0FCF006C0836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2691328E1F9F0FCF006C0836 /* Main.storyboard */; };
 		269132921F9F0FCF006C0836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 269132911F9F0FCF006C0836 /* Assets.xcassets */; };
 		269132951F9F0FCF006C0836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269132931F9F0FCF006C0836 /* LaunchScreen.storyboard */; };
+		269132A01F9F1073006C0836 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2691329F1F9F1073006C0836 /* SWRevealViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2658C0041FA0C869002BB3B7 /* ComingSoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewController.swift; sourceTree = "<group>"; };
+		2658C0061FA0CDF0002BB3B7 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
+		2658C0081FA0CF85002BB3B7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		269132871F9F0FCE006C0836 /* LichChieuPhim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LichChieuPhim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2691328A1F9F0FCE006C0836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2691328C1F9F0FCE006C0836 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		2691328C1F9F0FCE006C0836 /* NowShowingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowShowingController.swift; sourceTree = "<group>"; };
 		2691328F1F9F0FCF006C0836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		269132911F9F0FCF006C0836 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		269132941F9F0FCF006C0836 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		269132961F9F0FCF006C0836 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2691329D1F9F1071006C0836 /* LichChieuPhim-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LichChieuPhim-Bridging-Header.h"; sourceTree = "<group>"; };
+		2691329E1F9F1072006C0836 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		2691329F1F9F1073006C0836 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +45,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2658C0011FA0C7FC002BB3B7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2658C0081FA0CF85002BB3B7 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2658C0021FA0C803002BB3B7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2691328E1F9F0FCF006C0836 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2658C0031FA0C80C002BB3B7 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				2691328C1F9F0FCE006C0836 /* NowShowingController.swift */,
+				2658C0041FA0C869002BB3B7 /* ComingSoonViewController.swift */,
+				2658C0061FA0CDF0002BB3B7 /* MenuTableViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		2691327E1F9F0FCE006C0836 = {
 			isa = PBXGroup;
 			children = (
@@ -54,14 +90,26 @@
 		269132891F9F0FCE006C0836 /* LichChieuPhim */ = {
 			isa = PBXGroup;
 			children = (
+				2691329C1F9F0FE3006C0836 /* Frameworks */,
+				2658C0031FA0C80C002BB3B7 /* Controller */,
+				2658C0021FA0C803002BB3B7 /* View */,
+				2658C0011FA0C7FC002BB3B7 /* Model */,
 				2691328A1F9F0FCE006C0836 /* AppDelegate.swift */,
-				2691328C1F9F0FCE006C0836 /* ViewController.swift */,
-				2691328E1F9F0FCF006C0836 /* Main.storyboard */,
 				269132911F9F0FCF006C0836 /* Assets.xcassets */,
 				269132931F9F0FCF006C0836 /* LaunchScreen.storyboard */,
 				269132961F9F0FCF006C0836 /* Info.plist */,
 			);
 			path = LichChieuPhim;
+			sourceTree = "<group>";
+		};
+		2691329C1F9F0FE3006C0836 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2691329E1F9F1072006C0836 /* SWRevealViewController.h */,
+				2691329F1F9F1073006C0836 /* SWRevealViewController.m */,
+				2691329D1F9F1071006C0836 /* LichChieuPhim-Bridging-Header.h */,
+			);
+			path = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +144,7 @@
 				TargetAttributes = {
 					269132861F9F0FCE006C0836 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -136,8 +185,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2691328D1F9F0FCE006C0836 /* ViewController.swift in Sources */,
+				2658C0091FA0CF85002BB3B7 /* Movie.swift in Sources */,
+				2691328D1F9F0FCE006C0836 /* NowShowingController.swift in Sources */,
 				2691328B1F9F0FCE006C0836 /* AppDelegate.swift in Sources */,
+				2658C0071FA0CDF0002BB3B7 /* MenuTableViewController.swift in Sources */,
+				2658C0051FA0C869002BB3B7 /* ComingSoonViewController.swift in Sources */,
+				269132A01F9F1073006C0836 /* SWRevealViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -211,7 +264,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -262,7 +315,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -274,12 +327,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M37C2L4H2B;
 				INFOPLIST_FILE = LichChieuPhim/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DVMayTinh.LichChieuPhim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LichChieuPhim/Frameworks/LichChieuPhim-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,12 +346,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M37C2L4H2B;
 				INFOPLIST_FILE = LichChieuPhim/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.DVMayTinh.LichChieuPhim;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "LichChieuPhim/Frameworks/LichChieuPhim-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

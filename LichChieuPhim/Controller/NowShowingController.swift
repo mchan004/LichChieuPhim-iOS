@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  NowShowingController.swift
 //  LichChieuPhim
 //
 //  Created by Thanh Tu on 10/24/17.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class NowShowingController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
