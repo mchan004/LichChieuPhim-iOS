@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Now Showing Controller-->
         <scene sceneID="yTK-Rc-Qz4">
             <objects>
-                <viewController id="pzr-vR-BJl" customClass="ViewController" customModule="LichChieuPhim" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pzr-vR-BJl" customClass="NowShowingController" customModule="LichChieuPhim" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="akd-0o-b1O">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -20,9 +20,19 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="SfL-zc-9UY">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="RvQ-CV-oy3">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RvQ-CV-oy3" id="QIG-4Y-frU">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
-                                    <outlet property="dataSource" destination="pzr-vR-BJl" id="JD0-Wj-0bB"/>
-                                    <outlet property="delegate" destination="pzr-vR-BJl" id="Sry-us-9AR"/>
+                                    <outlet property="dataSource" destination="pzr-vR-BJl" id="mwd-mA-TiW"/>
+                                    <outlet property="delegate" destination="pzr-vR-BJl" id="gaP-Di-jsG"/>
                                 </connections>
                             </tableView>
                         </subviews>
@@ -38,6 +48,9 @@
                     <navigationItem key="navigationItem" id="OTu-pg-44b">
                         <barButtonItem key="leftBarButtonItem" image="menu" id="NgS-NM-OYR"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="SfL-zc-9UY" id="ZJZ-31-Pdh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sOW-Bu-fnm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -54,6 +67,16 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="a9G-x3-3UE">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" id="9s0-WB-wqe">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9s0-WB-wqe" id="NXx-Xr-czs">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="bEy-eN-GXC" id="Pwm-cx-c1d"/>
                                     <outlet property="delegate" destination="bEy-eN-GXC" id="x2B-H5-F12"/>
@@ -70,6 +93,9 @@
                         <viewLayoutGuide key="safeArea" id="aWZ-7L-5LQ"/>
                     </view>
                     <navigationItem key="navigationItem" id="v9o-Bu-5g4"/>
+                    <connections>
+                        <outlet property="tableView" destination="a9G-x3-3UE" id="aRv-nv-dkS"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jke-Uc-8zq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
