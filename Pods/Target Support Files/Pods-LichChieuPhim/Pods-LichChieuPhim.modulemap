@@ -1,0 +1,6 @@
+framework module Pods_LichChieuPhim {
+  umbrella header "Pods-LichChieuPhim-umbrella.h"
+
+  export *
+  module * { export * }
+}

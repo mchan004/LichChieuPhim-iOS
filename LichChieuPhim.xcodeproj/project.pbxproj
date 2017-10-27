@@ -7,21 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		261793CD1FA0EFA600BEAC22 /* HttpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261793CC1FA0EFA600BEAC22 /* HttpRequest.swift */; };
+		261793CF1FA195B700BEAC22 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 261793CE1FA195B700BEAC22 /* Extension.swift */; };
 		2658C0051FA0C869002BB3B7 /* ComingSoonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2658C0041FA0C869002BB3B7 /* ComingSoonViewController.swift */; };
 		2658C0071FA0CDF0002BB3B7 /* MenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2658C0061FA0CDF0002BB3B7 /* MenuTableViewController.swift */; };
 		2658C0091FA0CF85002BB3B7 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2658C0081FA0CF85002BB3B7 /* Movie.swift */; };
+		2658C00B1FA0D641002BB3B7 /* NowShowingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2658C00A1FA0D641002BB3B7 /* NowShowingTableViewCell.swift */; };
+		2658C00E1FA0D66C002BB3B7 /* ComingSoonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2658C00D1FA0D66C002BB3B7 /* ComingSoonTableViewCell.swift */; };
 		2691328B1F9F0FCE006C0836 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2691328A1F9F0FCE006C0836 /* AppDelegate.swift */; };
 		2691328D1F9F0FCE006C0836 /* NowShowingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2691328C1F9F0FCE006C0836 /* NowShowingController.swift */; };
 		269132901F9F0FCF006C0836 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2691328E1F9F0FCF006C0836 /* Main.storyboard */; };
 		269132921F9F0FCF006C0836 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 269132911F9F0FCF006C0836 /* Assets.xcassets */; };
 		269132951F9F0FCF006C0836 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269132931F9F0FCF006C0836 /* LaunchScreen.storyboard */; };
 		269132A01F9F1073006C0836 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2691329F1F9F1073006C0836 /* SWRevealViewController.m */; };
+		D21C6A3C113F6DE03E349323 /* Pods_LichChieuPhim.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85E92E8F97FEB5DDEB5E5C27 /* Pods_LichChieuPhim.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		261793CC1FA0EFA600BEAC22 /* HttpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpRequest.swift; sourceTree = "<group>"; };
+		261793CE1FA195B700BEAC22 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		2658C0041FA0C869002BB3B7 /* ComingSoonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonViewController.swift; sourceTree = "<group>"; };
 		2658C0061FA0CDF0002BB3B7 /* MenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewController.swift; sourceTree = "<group>"; };
 		2658C0081FA0CF85002BB3B7 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		2658C00A1FA0D641002BB3B7 /* NowShowingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowShowingTableViewCell.swift; sourceTree = "<group>"; };
+		2658C00D1FA0D66C002BB3B7 /* ComingSoonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComingSoonTableViewCell.swift; sourceTree = "<group>"; };
 		269132871F9F0FCE006C0836 /* LichChieuPhim.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LichChieuPhim.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2691328A1F9F0FCE006C0836 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2691328C1F9F0FCE006C0836 /* NowShowingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NowShowingController.swift; sourceTree = "<group>"; };
@@ -32,6 +41,9 @@
 		2691329D1F9F1071006C0836 /* LichChieuPhim-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LichChieuPhim-Bridging-Header.h"; sourceTree = "<group>"; };
 		2691329E1F9F1072006C0836 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		2691329F1F9F1073006C0836 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		85E92E8F97FEB5DDEB5E5C27 /* Pods_LichChieuPhim.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LichChieuPhim.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A20AA3ED78A79934F8862791 /* Pods-LichChieuPhim.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LichChieuPhim.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LichChieuPhim/Pods-LichChieuPhim.debug.xcconfig"; sourceTree = "<group>"; };
+		B836D0B1EA62DA0983067B0E /* Pods-LichChieuPhim.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LichChieuPhim.release.xcconfig"; path = "Pods/Target Support Files/Pods-LichChieuPhim/Pods-LichChieuPhim.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,12 +51,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D21C6A3C113F6DE03E349323 /* Pods_LichChieuPhim.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		261793CB1FA0EF1700BEAC22 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				261793CC1FA0EFA600BEAC22 /* HttpRequest.swift */,
+				261793CE1FA195B700BEAC22 /* Extension.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		2658C0011FA0C7FC002BB3B7 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +78,7 @@
 		2658C0021FA0C803002BB3B7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				2658C00C1FA0D648002BB3B7 /* Cell */,
 				2691328E1F9F0FCF006C0836 /* Main.storyboard */,
 			);
 			path = View;
@@ -71,11 +94,22 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		2658C00C1FA0D648002BB3B7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2658C00A1FA0D641002BB3B7 /* NowShowingTableViewCell.swift */,
+				2658C00D1FA0D66C002BB3B7 /* ComingSoonTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		2691327E1F9F0FCE006C0836 = {
 			isa = PBXGroup;
 			children = (
 				269132891F9F0FCE006C0836 /* LichChieuPhim */,
 				269132881F9F0FCE006C0836 /* Products */,
+				894C19783FA306F5AB574677 /* Pods */,
+				AD0E480E67EBF82D0174615A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +124,7 @@
 		269132891F9F0FCE006C0836 /* LichChieuPhim */ = {
 			isa = PBXGroup;
 			children = (
+				261793CB1FA0EF1700BEAC22 /* Helper */,
 				2691329C1F9F0FE3006C0836 /* Frameworks */,
 				2658C0031FA0C80C002BB3B7 /* Controller */,
 				2658C0021FA0C803002BB3B7 /* View */,
@@ -112,6 +147,23 @@
 			path = Frameworks;
 			sourceTree = "<group>";
 		};
+		894C19783FA306F5AB574677 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A20AA3ED78A79934F8862791 /* Pods-LichChieuPhim.debug.xcconfig */,
+				B836D0B1EA62DA0983067B0E /* Pods-LichChieuPhim.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		AD0E480E67EBF82D0174615A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				85E92E8F97FEB5DDEB5E5C27 /* Pods_LichChieuPhim.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -119,9 +171,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 269132991F9F0FCF006C0836 /* Build configuration list for PBXNativeTarget "LichChieuPhim" */;
 			buildPhases = (
+				2FE0D88AE571F0E3F05210D7 /* [CP] Check Pods Manifest.lock */,
 				269132831F9F0FCE006C0836 /* Sources */,
 				269132841F9F0FCE006C0836 /* Frameworks */,
 				269132851F9F0FCE006C0836 /* Resources */,
+				EB7AA3C238B8300DF57F2C09 /* [CP] Embed Pods Frameworks */,
+				322699528079D69A1DFC46C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -180,6 +235,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2FE0D88AE571F0E3F05210D7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LichChieuPhim-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		322699528079D69A1DFC46C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LichChieuPhim/Pods-LichChieuPhim-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB7AA3C238B8300DF57F2C09 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-LichChieuPhim/Pods-LichChieuPhim-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AMScrollingNavbar/AMScrollingNavbar.framework",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AMScrollingNavbar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cosmos.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LichChieuPhim/Pods-LichChieuPhim-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		269132831F9F0FCE006C0836 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -188,9 +303,13 @@
 				2658C0091FA0CF85002BB3B7 /* Movie.swift in Sources */,
 				2691328D1F9F0FCE006C0836 /* NowShowingController.swift in Sources */,
 				2691328B1F9F0FCE006C0836 /* AppDelegate.swift in Sources */,
+				2658C00B1FA0D641002BB3B7 /* NowShowingTableViewCell.swift in Sources */,
 				2658C0071FA0CDF0002BB3B7 /* MenuTableViewController.swift in Sources */,
+				261793CF1FA195B700BEAC22 /* Extension.swift in Sources */,
+				261793CD1FA0EFA600BEAC22 /* HttpRequest.swift in Sources */,
 				2658C0051FA0C869002BB3B7 /* ComingSoonViewController.swift in Sources */,
 				269132A01F9F1073006C0836 /* SWRevealViewController.m in Sources */,
+				2658C00E1FA0D66C002BB3B7 /* ComingSoonTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +444,7 @@
 		};
 		2691329A1F9F0FCF006C0836 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A20AA3ED78A79934F8862791 /* Pods-LichChieuPhim.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -344,6 +464,7 @@
 		};
 		2691329B1F9F0FCF006C0836 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B836D0B1EA62DA0983067B0E /* Pods-LichChieuPhim.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
