@@ -30,6 +30,7 @@ import UIKit
  A custom `UINavigationController` that enables the scrolling of the navigation bar alongside the
  scrolling of an observed content view
  */
+@objcMembers
 open class ScrollingNavigationController: UINavigationController, UIGestureRecognizerDelegate {
 
   /**
@@ -207,7 +208,7 @@ open class ScrollingNavigationController: UINavigationController, UIGestureRecog
 
   // MARK: - Gesture recognizer
 
-  @objc func handlePan(_ gesture: UIPanGestureRecognizer) {
+  func handlePan(_ gesture: UIPanGestureRecognizer) {
     if gesture.state != .failed {
       if let superview = scrollableView?.superview {
         let translation = gesture.translation(in: superview)
@@ -228,7 +229,7 @@ open class ScrollingNavigationController: UINavigationController, UIGestureRecog
 
   // MARK: - Rotation handler
 
-  @objc func didRotate(_ notification: Notification) {
+  func didRotate(_ notification: Notification) {
     showNavbar()
   }
 
@@ -243,7 +244,7 @@ open class ScrollingNavigationController: UINavigationController, UIGestureRecog
 
   // MARK: - Notification handler
 
-  @objc func didBecomeActive(_ notification: Notification) {
+  func didBecomeActive(_ notification: Notification) {
     if expandOnActive {
       showNavbar(animated: false)
     } else {
@@ -253,7 +254,7 @@ open class ScrollingNavigationController: UINavigationController, UIGestureRecog
     }
   }
 
-  @objc func willResignActive(_ notification: Notification) {
+  func willResignActive(_ notification: Notification) {
     previousState = state
   }
 
@@ -437,15 +438,22 @@ open class ScrollingNavigationController: UINavigationController, UIGestureRecog
 
     // Hide all possible button items and navigation items
     func shouldHideView(_ view: UIView) -> Bool {
-      let className = view.classForCoder.description()
+      let className = view.classForCoder.description().replacingOccurrences(of: "_", with: "")
       return className == "UINavigationButton" ||
         className == "UINavigationItemView" ||
         className == "UIImageView" ||
-        className == "UISegmentedControl"
+        className == "UISegmentedControl" ||
+        className == "UINavigationBarContentView"
     }
+
+    func setAlphaOfSubviews(view: UIView, alpha: CGFloat) {
+      view.alpha = alpha
+      view.subviews.forEach { setAlphaOfSubviews(view: $0, alpha: alpha) }
+    }
+
     navigationBar.subviews
       .filter(shouldHideView)
-      .forEach { $0.alpha = alpha }
+      .forEach { setAlphaOfSubviews(view: $0, alpha: alpha) }
 
     // Hide the left items
     navigationItem.leftBarButtonItem?.customView?.alpha = alpha

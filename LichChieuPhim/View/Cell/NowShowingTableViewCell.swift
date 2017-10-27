@@ -8,6 +8,7 @@
 
 import UIKit
 import Kingfisher
+import Cosmos
 
 class NowShowingTableViewCell: UITableViewCell {
 
@@ -16,6 +17,8 @@ class NowShowingTableViewCell: UITableViewCell {
     @IBOutlet weak var labelBody: UILabel!
     @IBOutlet weak var labelTenPhim: UILabel!
     @IBOutlet weak var labelNoiDung: UILabel!
+    @IBOutlet weak var ratingStar: CosmosView!
+    
     
     var movie: Movie? {
         didSet {
@@ -74,6 +77,13 @@ class NowShowingTableViewCell: UITableViewCell {
                 labelNoiDung.text = dt
             }
             
+            if let dt = movie?.Rate {
+                if let i = Double(dt) {
+                    ratingStar.rating = i
+                }
+            }
+            
+            
         }
     }
     
@@ -81,7 +91,9 @@ class NowShowingTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
+        ratingStar.settings.updateOnTouch = false
+        imageMovie.clipsToBounds = true
+        imageMovie.layer.cornerRadius = 3
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

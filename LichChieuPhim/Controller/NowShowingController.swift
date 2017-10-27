@@ -14,36 +14,52 @@ class NowShowingController: UIViewController, UITableViewDelegate, UITableViewDa
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
     
+    lazy var refresh: UIRefreshControl = {
+        let ref = UIRefreshControl()
+        ref.tintColor = UIColor.red
+        ref.addTarget(self, action: #selector(handleRefresh(_:)), for: UIControlEvents.valueChanged)
+        return ref
+    }()
+    
+    
     
     var movies: [Movie] = []
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
-        if self.revealViewController() != nil {
-            menuButton.target = self.revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
-        
-        
-        HttpRequest().getNowShowing { (data) in
-            self.movies = data
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
-            }
-        }
+        setupView()
+        getData()
         
         
         
     }
     
     
+    ////////////
+    //Function//
+    ////////////
+    func setupView() {
+        tableView.addSubview(refresh)
+        if self.revealViewController() != nil {
+            menuButton.target = self.revealViewController()
+            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+        }
+    }
     
+    func getData() {
+        HttpRequest().getNowShowing { (data) in
+            self.movies = data
+            DispatchQueue.main.async {
+                self.tableView.reloadData()
+                self.refresh.endRefreshing()
+            }
+        }
+    }
     
-    
-    
-    
+    @objc func handleRefresh(_ refreshControl: UIRefreshControl) {
+        getData()
+    }
     
     /////////////
     //TableView//

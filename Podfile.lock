@@ -1,8 +1,8 @@
 PODS:
   - Alamofire (4.5.1)
-  - AMScrollingNavbar (4.0.2)
+  - AMScrollingNavbar (4.0.4)
   - Cosmos (12.0.1)
-  - Kingfisher (4.1.0)
+  - Kingfisher (4.2.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -12,9 +12,9 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
-  AMScrollingNavbar: 5c36344fe5e262022257f2e6c6d574f0c6d35b24
+  AMScrollingNavbar: 3f35e65f5c97918c31be2179bda9ecb25dc5a3df
   Cosmos: 4a9f57998a08788a1062c7b8eefbc62d2b590f39
-  Kingfisher: f14df8cbe576bf55f211fa589e9869bceb4ea87d
+  Kingfisher: 9ee7e788d8ba07c3f21ce0d43f33cec310a4f781
 
 PODFILE CHECKSUM: 7c48c5818c6a091f58cae3988f180123e43fd0fd
 
