@@ -23,4 +23,16 @@ class HttpRequest {
             }
         }
     }
+    
+    func getComingSoon(completionHandler: @escaping (_ movies: [Movie]) -> Void) {
+        Alamofire.request(u + "phimsapchieu/phim_sap_chieu.php").response { response in
+            guard let data = response.data else { return }
+            do {
+                let movies = try JSONDecoder().decode([Movie].self, from: data)
+                completionHandler(movies)
+            } catch let jsonErr {
+                print("Json Err: ", jsonErr)
+            }
+        }
+    }
 }
