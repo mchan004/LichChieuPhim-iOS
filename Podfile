@@ -10,6 +10,6 @@ target 'LichChieuPhim' do
   pod 'Kingfisher'
   pod 'AMScrollingNavbar'
   pod 'Cosmos'
-
+  pod 'YouTubePlayer'
 
 end

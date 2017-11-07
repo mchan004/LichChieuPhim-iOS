@@ -18,3 +18,6 @@ extension String {
     var count: Int { return characters.count }
 }       
 
+class Luu {
+    static var movie:Movie?
+}

@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import AMScrollingNavbar
 
 class NowShowingController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
@@ -79,7 +78,10 @@ class NowShowingController: UIViewController, UITableViewDelegate, UITableViewDa
         return 235
     }
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        Luu.movie = movies[indexPath.row]
+//        UserDefaults.standard.set(movies[indexPath.row].Lotte, forKey: "MovieSelected")
+    }
     
     
     
@@ -106,4 +108,5 @@ class NowShowingController: UIViewController, UITableViewDelegate, UITableViewDa
 
 
 }
+
 
