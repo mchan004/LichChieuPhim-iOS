@@ -35,4 +35,38 @@ class HttpRequest {
             }
         }
     }
+    
+    func getComming(idPhim: String ,completionHandler: @escaping (_ movies: [Comment]) -> Void) {
+        Alamofire.request(u + "phimdangchieu/comment.php?id=" + idPhim).response { response in
+            guard let data = response.data else { return }
+            do {
+                let comments = try JSONDecoder().decode([Comment].self, from: data)
+                completionHandler(comments)
+            } catch let jsonErr {
+                print("Json Err: ", jsonErr)
+            }
+        }
+    }
+    
+    func postComment(comment: String, email: String, name: String, rating: Double, completionHandler: @escaping (_ str: String) -> Void) {
+        guard let tenPhim = Luu.movie?.TenPhim else {
+            return
+        }
+        
+        let parameters: Parameters = [
+            "id": tenPhim,
+            "Name": name,
+            "Email": email,
+            "Comment": comment,
+            "Rate": rating
+        ]
+        
+        Alamofire.request(u + "phimdangchieu/comment_POST.php", method: .post, parameters: parameters).response { response in
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                completionHandler(utf8Text)
+                
+            }
+        }
+        ///phimdangchieu/comment_POST.php
+    }
 }
