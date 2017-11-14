@@ -31,6 +31,12 @@ class Row4NowShowingTableViewCell: UITableViewCell, UITableViewDelegate, UITable
         
         HttpRequest().postComment(comment: comment, email: email, name: name, rating: rating.rating) { (data) in
             NotificationCenter.default.post(name: Notification.Name.init(rawValue: "alertComment"), object: data as String)
+            DispatchQueue.main.async {
+                self.textEmail.text = ""
+                self.textName.text = ""
+                self.textComment.text = ""
+            }
+            
         }
     }
     
@@ -86,7 +92,7 @@ class Row4NowShowingTableViewCell: UITableViewCell, UITableViewDelegate, UITable
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = Bundle.main.loadNibNamed("CommentTableViewCell", owner: self, options: nil)?.first as! CommentTableViewCell
-        
+        cell.comment = comments[indexPath.row]
         
         return cell
     }

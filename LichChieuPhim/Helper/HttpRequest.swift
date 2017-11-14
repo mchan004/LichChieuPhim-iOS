@@ -38,6 +38,11 @@ class HttpRequest {
     
     func getComming(idPhim: String ,completionHandler: @escaping (_ movies: [Comment]) -> Void) {
         Alamofire.request(u + "phimdangchieu/comment.php?id=" + idPhim).response { response in
+            if let data = response.data, let utf8Text = String(data: data, encoding: .utf8) {
+                print(utf8Text)
+                
+            }
+            
             guard let data = response.data else { return }
             do {
                 let comments = try JSONDecoder().decode([Comment].self, from: data)

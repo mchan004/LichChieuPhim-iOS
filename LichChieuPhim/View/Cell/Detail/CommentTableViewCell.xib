@@ -78,6 +78,12 @@
             </tableViewCellContentView>
             <color key="backgroundColor" red="0.99745720624923706" green="0.98710089921951294" blue="0.94241344928741455" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="labelName" destination="Jjw-SL-p0h" id="hwy-sD-x44"/>
+                <outlet property="labelNoidung" destination="mG8-Cm-yR9" id="WHV-9N-u0i"/>
+                <outlet property="labelTime" destination="PcV-9w-nhS" id="PyH-kw-jXv"/>
+                <outlet property="rate" destination="YZf-fh-eEq" id="PrE-R7-1WO"/>
+            </connections>
             <point key="canvasLocation" x="57" y="98.5"/>
         </tableViewCell>
     </objects>
