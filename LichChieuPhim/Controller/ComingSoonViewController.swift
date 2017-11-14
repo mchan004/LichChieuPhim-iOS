@@ -80,7 +80,9 @@ class ComingSoonController: UIViewController, UITableViewDelegate, UITableViewDa
     }
     
     
-    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        Luu.movie = movies[indexPath.row]
+    }
     
     
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {

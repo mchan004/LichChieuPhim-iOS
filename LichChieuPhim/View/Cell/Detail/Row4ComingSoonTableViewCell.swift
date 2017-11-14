@@ -9,8 +9,8 @@
 import UIKit
 import Cosmos
 
-class Row4NowShowingTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDataSource {
-
+class Row4ComingSoonTableViewCell: UITableViewCell, UITableViewDelegate, UITableViewDataSource {
+    
     @IBOutlet weak var buttonSend: UIButton!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var heightOfTableView: NSLayoutConstraint!
@@ -29,8 +29,8 @@ class Row4NowShowingTableViewCell: UITableViewCell, UITableViewDelegate, UITable
             return
         }
         
-        HttpRequest().postComment(comment: comment, email: email, name: name, rating: rating.rating) { (data) in
-            NotificationCenter.default.post(name: Notification.Name.init(rawValue: "alertComment"), object: data as String)
+        HttpRequest().postCommentComingSoon(comment: comment, email: email, name: name, rating: rating.rating) { (data) in
+            NotificationCenter.default.post(name: Notification.Name.init(rawValue: "alertCommentComingSoon"), object: data as String)
             DispatchQueue.main.async {
                 self.textEmail.text = ""
                 self.textName.text = ""
@@ -64,7 +64,7 @@ class Row4NowShowingTableViewCell: UITableViewCell, UITableViewDelegate, UITable
         tableView.dataSource = self
         
         if let idPhim = Luu.movie?.id {
-            HttpRequest().getComment(idPhim: idPhim) { (data) in
+            HttpRequest().getCommentComingSoon(idPhim: idPhim) { (data) in
                 self.comments = data
                 DispatchQueue.main.async {
                     self.tableView.reloadData()
@@ -96,11 +96,12 @@ class Row4NowShowingTableViewCell: UITableViewCell, UITableViewDelegate, UITable
         
         return cell
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
+        
         // Configure the view for the selected state
     }
-
+    
 }
+

@@ -80,7 +80,6 @@ class NowShowingController: UIViewController, UITableViewDelegate, UITableViewDa
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         Luu.movie = movies[indexPath.row]
-//        UserDefaults.standard.set(movies[indexPath.row].Lotte, forKey: "MovieSelected")
     }
     
     

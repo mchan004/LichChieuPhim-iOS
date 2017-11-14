@@ -15,6 +15,7 @@
 		2607B1421FBA0E76007EB34A /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607B1401FBA0E76007EB34A /* CommentTableViewCell.swift */; };
 		2607B1431FBA0E76007EB34A /* CommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2607B1411FBA0E76007EB34A /* CommentTableViewCell.xib */; };
 		2607B1451FBAC7AC007EB34A /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607B1441FBAC7AC007EB34A /* Comment.swift */; };
+		2607B1471FBB45CC007EB34A /* Row4ComingSoonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2607B1461FBB45CC007EB34A /* Row4ComingSoonTableViewCell.swift */; };
 		2611FA431FB881FA00D78514 /* ScheduleCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2611FA421FB881FA00D78514 /* ScheduleCollectionViewCell.swift */; };
 		2611FA451FB8828B00D78514 /* Row3NowShowingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2611FA441FB8828B00D78514 /* Row3NowShowingTableViewCell.swift */; };
 		2611FA471FB99D8B00D78514 /* ScheduleGalaxyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2611FA461FB99D8B00D78514 /* ScheduleGalaxyViewController.swift */; };
@@ -43,6 +44,7 @@
 		2607B1401FBA0E76007EB34A /* CommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		2607B1411FBA0E76007EB34A /* CommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentTableViewCell.xib; sourceTree = "<group>"; };
 		2607B1441FBAC7AC007EB34A /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		2607B1461FBB45CC007EB34A /* Row4ComingSoonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row4ComingSoonTableViewCell.swift; sourceTree = "<group>"; };
 		2611FA421FB881FA00D78514 /* ScheduleCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCollectionViewCell.swift; sourceTree = "<group>"; };
 		2611FA441FB8828B00D78514 /* Row3NowShowingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Row3NowShowingTableViewCell.swift; sourceTree = "<group>"; };
 		2611FA461FB99D8B00D78514 /* ScheduleGalaxyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleGalaxyViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				2607B13E1FBA0143007EB34A /* Row4NowShowingTableViewCell.swift */,
 				2607B1401FBA0E76007EB34A /* CommentTableViewCell.swift */,
 				2607B1411FBA0E76007EB34A /* CommentTableViewCell.xib */,
+				2607B1461FBB45CC007EB34A /* Row4ComingSoonTableViewCell.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				2691328B1F9F0FCE006C0836 /* AppDelegate.swift in Sources */,
 				2658C00B1FA0D641002BB3B7 /* NowShowingTableViewCell.swift in Sources */,
 				2611FA451FB8828B00D78514 /* Row3NowShowingTableViewCell.swift in Sources */,
+				2607B1471FBB45CC007EB34A /* Row4ComingSoonTableViewCell.swift in Sources */,
 				2607B13F1FBA0143007EB34A /* Row4NowShowingTableViewCell.swift in Sources */,
 				2658C0071FA0CDF0002BB3B7 /* MenuTableViewController.swift in Sources */,
 				261793CF1FA195B700BEAC22 /* Extension.swift in Sources */,
