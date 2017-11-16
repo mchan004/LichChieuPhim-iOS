@@ -11,5 +11,9 @@ target 'LichChieuPhim' do
   pod 'AMScrollingNavbar'
   pod 'Cosmos'
   pod 'YouTubePlayer'
+  pod 'FacebookCore'
+  pod 'FacebookLogin'
+  pod 'FacebookShare'
+
 
 end
