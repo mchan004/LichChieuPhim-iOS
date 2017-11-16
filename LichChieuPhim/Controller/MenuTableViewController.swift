@@ -7,17 +7,24 @@
 //
 
 import UIKit
+import FBSDKCoreKit
+import FBSDKLoginKit
 
 class MenuTableViewController: UITableViewController {
 
+    @IBOutlet weak var buttonLogin: FBSDKLoginButton!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        if (FBSDKAccessToken.current() != nil) {
+            print("logined")
+        } else {
+            print("chua.....")
+        }
+        
+        buttonLogin.readPermissions = ["public_profile", "email", "user_friends"]
+        
+        
     }
 
     override func didReceiveMemoryWarning() {

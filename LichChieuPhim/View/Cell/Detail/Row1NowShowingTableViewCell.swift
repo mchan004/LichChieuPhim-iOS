@@ -9,6 +9,7 @@
 import UIKit
 import Cosmos
 import Kingfisher
+import FBSDKShareKit
 
 class Row1NowShowingTableViewCell: UITableViewCell {
 
@@ -16,6 +17,7 @@ class Row1NowShowingTableViewCell: UITableViewCell {
     @IBOutlet weak var labelTitle: UILabel!
     @IBOutlet weak var labelBody: UILabel!
     @IBOutlet weak var ratingStar: CosmosView!
+    @IBOutlet weak var buttonShare: FBSDKShareButton!
     
     
     var movie: Movie? {
@@ -127,10 +129,16 @@ class Row1NowShowingTableViewCell: UITableViewCell {
     }
     
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        let image = imageMovie.image
+        let photo = FBSDKSharePhoto.init()
+        photo.image = image
+        photo.isUserGenerated = true
+        let content = FBSDKSharePhotoContent.init()
+        content.photos = [photo]
+        buttonShare.shareContent = content
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
